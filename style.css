@@ -1,0 +1,376 @@
+/*
+Theme Name:Love and Fame
+Author: krishna
+Author URI: https://wordpress.org/
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, accessibility-ready
+Text Domain: twentythirteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ==========================================================================
+  1. CSS RESET
+============================================================================= */
+/************* Typography ******************/
+
+
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+
+@font-face {
+    font-family: BentonSansBook;
+    src: url(fonts/BentonSansBook.otf);
+}
+@font-face {
+    font-family: BentonSansRegular;
+    src: url(fonts/BentonSansRegular.otf);
+}
+@font-face {
+    font-family: BentonSansMedium;
+    src: url(fonts/BentonSansMedium.otf);
+}
+@font-face {
+    font-family: BentonSansBold;
+    src: url(fonts/BentonSansBold.otf);
+}
+@font-face {
+    font-family: BentonSansBlack;
+    src: url(fonts/BentonSansBlack.otf);
+}
+.mt-0{margin-top:0px !important} .mt-10{margin-top:10px !important} .mt-15{margin-top:15px !important} .mt-20{margin-top:20px !important} .mt-30{margin-top:30px !important} .mt-40{margin-top:40px !important} .mt-50{margin-top:50px !important} .mt-60{margin-top:60px !important} .mt-70{margin-top:70px !important} .mt-80{margin-top:80px !important} .mt-90{margin-top:90px !important}
+.color1{color:#FFF !important}
+.underline{text-decoration:underline}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: Playfair Display, BentonSansBook, sans-serif !important;
+}
+p {
+    font-size: 1.787rem;font-family: BentonSansRegular, sans-serif !important; line-height: 1.7em;
+    font-weight: 400; 
+}
+.navbar-inverse .navbar-brand {
+    background: rgba(0, 0, 0, 0) url("fal-logo-140.png") no-repeat scroll 0 0 / 100% auto;
+    bottom: 0px;
+	top:0px;
+    display: block;
+    padding: 0;
+    text-indent: -9999px;
+    transition: opacity 0.1s ease-out 0s;
+    width: 95px;
+	height:100px;
+	margin:10px 0px 0px 0px;
+}
+.fixed-top {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+    z-index: 1030;
+	background:#FFF;
+}
+header{box-shadow: 0 0 7px rgba(0, 0, 2, 0.2) !important;}
+
+.nav-right {float:right;}
+.navbar-nav {margin-top:26px;}
+
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+  background-color:transparent;
+  padding:10px 0px 0px 0px;
+}
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+}
+.navbar-inverse {
+   background-color: transparent;
+   border-color: transparent; 
+}
+.featurette-heading {
+  font-weight: 700;font-family: 'Raleway', sans-serif; font-weight:700; text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav>li>a {
+  font-family: 'Raleway', sans-serif; font-weight:400;  margin-right:10px;color: rgba(0,0,0,.7); font-size:17px;
+}
+@media (min-width: 960px) and (max-width: 1170px) {
+	.navbar-inverse .navbar-nav>li>a {
+	  font-size:14px;margin-right:6px
+	}
+	.nav>li>a {
+		position: relative;
+		display: block;
+		padding: 10px 12px;
+	}
+}
+.navbar-inverse .navbar-nav>li:first-child{border-left: none;}
+.navbar-inverse .navbar-nav>li>a:hover {
+ color: rgba(0,0,0,1);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: rgba(0,0,0,1); background: transparent;
+}
+.join {
+    color: rgba(0,0,0,1); background: #fff3ef;
+	margin-left:10px;
+}
+.join:hover {
+    color: rgba(0,0,0,1); background: #fff3ef;
+}
+
+.banner-sec {
+	text-align: center;
+	color: black;
+	background: url(banner1.jpg) no-repeat top center;
+	min-height:526px;
+	position: relative;
+    padding: 50px 0;
+    background-size: cover;
+	/* margin-top:100px !important */
+}
+.intro-message {
+  position: relative;
+  padding-top: 35% !important;
+}
+ul{list-style: none;}
+.btn-join {border:2px solid #000; padding:10px 20px;font-family: "BentonSansRegular" !important; border-radius:0px; margin-top:10px; color:#000; letter-spacing: -1; background:#FFF;}
+.btn-join:hover {border:2px solid #000; padding:10px 20px;font-family: "BentonSansRegular" !important; border-radius:0px;  color:#FFF; background:#000;}
+
+.brand {background-color: #fcefea; padding: 24px 0;}
+.home-socialproof img {
+    height: 42px;
+    margin-right: 2.4%;
+    margin-left: 2.4%;
+	max-width: 100%;
+}
+.bg1 {background: #FFF !important;}
+.wel-sec{padding:40px 0px;}
+.wel-sec h1 { font-size: 46px;line-height: 1em !important;padding-bottom: 20px;color: #333; margin-bottom:0px;}
+.wel-sec h2 { font-size: 30px;}
+.wel-sec h3{ margin-top:0px; color:#333333;}
+
+.ser-img {width:180px; margin:30px auto;}
+.ser-img img {width:100%; margin:0px auto;}
+
+.ser-img2 {width:300px; margin:30px auto;}
+.ser-img2 img {width:100%; margin:0px auto;}
+
+.ser-img3 {width:80px; margin:30px auto;}
+.ser-img3 img {width:100%; margin:0px auto;}
+
+.ser-img4 {width:300px;  float: right;}
+.ser-img4 img {width:100%; margin:0px auto;}
+
+.weel-sec{padding:40px 0px; background:#fcefea;}
+.weel-sec h1 {font-size: 48px;color: #333;}
+.weel-sec p {margin-top:15px;}
+.weel-sec ul{list-style: none;}
+.weel-sec ul li {display: inline-block;}
+
+.btn-join2 { margin-top:10px;}
+.btn-join2 a{border:2px solid #000; padding:10px 30px;font-family: "BentonSansRegular" !important; border-radius:0px; color:#000 !important; letter-spacing: -1; background:#FFF; text-decoration: none;}
+
+.btn-join2 a:hover {color:#FFF!important; background:#000;}
+
+.f14 {font-size:14px !important;}
+.f16 {font-size:16px !important;}
+.box-shadow {
+    -moz-filter: drop-shadow(0px 16px 20px #b7b7b7);
+    -webkit-filter: drop-shadow(0px 16px 20px #b7b7b7);
+    -o-filter: drop-shadow(0px 16px 20px #b7b7b7);
+    -ms-filter: drop-shadow(0px 16px 20px #b7b7b7);
+    filter: drop-shadow(0px 16px 20px #b7b7b7);
+}
+.modal-header {
+    border-top: 0px solid orange;
+}
+.modal-footer {
+    border-top: 0px solid orange;
+}
+.form-control{margin-bottom:10px; border-radius:0px; border: none; min-height:45px;}
+.mobile {background-size: cover; background-position: center center; min-height: 650px;}
+
+.mobile2 { background:#f8f8f8;}
+.mobile2 img {width:100%; height:auto;}
+
+.mo-bu {background: #f0751d; text-align: center; padding: 18px; display: block; width:100%; color:#FFF; border-radius: 0px; font-size:20px; font-weight:600;}
+.mo-bu:hover {color:#FFF;}
+
+.mo-bu1 {background: #00a99d; text-align: center; padding: 18px; display: block; width:100%; color:#FFF; border-radius: 0px; font-size:20px; font-weight:600;}
+.mo-bu1:hover {color:#FFF;}
+
+.test-sec {background:#fcefea; padding:60px 0px;}
+.test-sec h1 {font-size: 48px;color: #333;}
+.test-sec p strong{color: #d8424d;}
+
+.test-sec ul{padding-left:40px; margin-top:40px;}
+.test-sec li{margin-bottom:20px;font-size: 1.787rem;font-family: BentonSansRegular, sans-serif !important; line-height: 1.7em;
+    font-weight: 400; }
+	
+.faq-sec {background:#FFF; padding:80px 0px 80px 0px;}
+.faq-sec h1 {font-size: 48px;color: #333;}
+.faq-sec h4 {font-size: 1.787rem;font-family: BentonSansRegular, sans-serif !important; line-height: 1.7em;
+    font-weight: 600; }
+.faq-sec p {font-size: 1.787rem;font-family: BentonSansRegular, sans-serif !important; line-height: 1.7em;
+    font-weight: 400;  margin-top:20px;}
+	
+.guarantee {background:#000; padding:60px 0px 40px 0px;}
+.guarantee h1 {font-size: 48px;color: #FFF;}
+.guarantee p {font-size: 1.787rem;font-family: BentonSansRegular, sans-serif !important; line-height: 1.7em; font-weight: 400;  margin-top:20px; color:#FFF;}
+
+footer {background:white; padding:120px 0px 100px 0px;}
+footer p {font-size: 14px;font-family: BentonSansRegular, sans-serif !important; line-height: 1.7em; font-weight: 400;  margin-top:20px; color:black;}
+.footer-button{
+    background-color: #f0751d; 
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px 25px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+footer a{
+	text-decoration:none;
+	color:#fff;
+}
+footer a:hover{
+	text-decoration:none;
+	color:#fff;
+	background-color: #f0751d; 
+    border: none;
+}
+
+.head-sec {background:orange; padding:20px 0px 20px 0px; margin-top:100px !important}
+.head-sec  h3 {font-size: 28px;color: #000; margin-top:35px;}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+    background: #000; margin-top:30px;
+}
+.start6{}
+@media screen and (max-width: 640px) {
+	.start6{ margin-top:70%}
+}
+
+@media screen and (min-width: 1600px) {
+	.intro-message {
+	  position: relative;
+	  padding-top: 32% !important;
+	}
+}
+
+
+/* #menu-head{margin-top:5px; float:left;} */
+#menu-header{margin-top:0px; float:left;}
+#menu-header>li {}
+/* #menu-head>li:first-child {
+    margin-left: 15px;
+} */
+/* .my-class{height:2px; width:80%; both:clear;} */
+.top-menu{margin-top:5px;}
+.top-menu ul{list-style: none; padding-left:0px; text-align: left;}
+.top-menu li { display: inline-block; color: #000; background: orange; margin-left: 10px; padding: 15px 15px; }
+.top-menu li a { color:#000;}
+.top-menu li a:hover { color: #d40d52; text-decoration:none;}
+.logo-all {display:block; margin:0px; padding:0px;}
+.logo-all li {display:inline-block; padding:0px; margin:0 10px 10px 10px; width: 12%; text-align:center;}
+.logo-all li img {max-widh:100%; max-height:42px; margin:0 auto;}
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.logo-all li {width: 11%;}
+}
+@media screen and (max-width: 992px) {
+	.navbar-inverse .navbar-nav>li>a{font-size: 14px; margin-right: 5px;}
+}
+@media screen and (max-width: 767px) {
+	.intro-message{padding-top: 40% !important;}
+	#menu-header {width:100%; float: left;}
+	.navbar-header{padding:5px 0;}
+	.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form 
+	{
+		border-color: yellow;
+	}
+	#menu-header>li:nth-child(7){width:60%; margin:0 auto 10px auto; text-align:center;}
+	#menu-header>li:nth-child(8){ width:60%; margin:0 auto 0px auto; text-align:center;}
+}
+@media screen and (max-width: 480px) {
+	.logo-all li {width: 19%;}
+	.logo-all li:nth-child(5){margin-left:12%;}
+	.banner-sec {
+    background-size: 260% auto;
+	    min-height: 454px;
+}
+.start6 {
+    margin-top: 18%;
+}
+.brand 
+{
+	margin-top: -15px;
+}
+}
+
+@media screen and (max-width: 400px) {
+	.logo-all li {width: 43%;}
+	.logo-all li:nth-child(5){margin-left:0%;}
+	.logo-all li:nth-child(7){margin-left:24%;}
+	.banner-sec {
+    background-size: 260% auto;
+	   min-height: 400px;
+}
+}
+
+@media screen and (max-width: 380px) {
+	.brand 
+{
+	margin-top: -15px;
+}
+	.banner-sec {
+    background-size: 260% auto;
+	   min-height: 400px;
+}
+.intro-message {
+    position: relative;
+    padding-top: 28% !important;
+}
+}
+
+@media screen and (max-width: 320px) {
+	.logo-all li {width: 40%;}
+	.logo-all li:nth-child(5){margin-left:0%;}
+	.logo-all li:nth-child(7){margin-left:24%;}
+	.start6 {
+    margin-top: 20%;
+}
+.banner-sec {
+    background-size: 260% auto;
+    min-height: 311px;
+}
+.brand 
+{
+	margin-top: -25px;
+}
+#menu-header>li:nth-child(7){width:80%; margin:0 auto 10px auto; text-align:center;}
+	#menu-header>li:nth-child(8){ width:80%; margin:0 auto 0px auto; text-align:center;}
+}
